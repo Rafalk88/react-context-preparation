@@ -1,18 +1,14 @@
 // ./src/components/Box.js
 import React from 'react';
-import Div from './Div';
+import Row from "./Row";
 
 export default class Box extends React.Component {
-    render() {
-        const divStyle = {
-          padding: "100px",
-        };
-
-        return (
-          <>
-            <Div type="dark" />
-            <Div style={divStyle} />
-          </>
-        );
-    }
+  render() {
+    return (
+      <>
+        <Row type="dark" />
+        <Row space="medium" />
+      </>
+    );
+  }
 }
