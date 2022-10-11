@@ -4,6 +4,15 @@ import Div from './Div';
 
 export default class Box extends React.Component {
     render() {
-        return <Div />
+        const divStyle = {
+          padding: "100px",
+        };
+
+        return (
+          <>
+            <Div type="dark" />
+            <Div style={divStyle} />
+          </>
+        );
     }
 }
