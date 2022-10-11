@@ -2,6 +2,8 @@
 import React from "react";
 import classNames from "classnames";
 
+import "./../scss/Row.scss";
+
 const Row = (props) => {
   const { type, space } = props;
 

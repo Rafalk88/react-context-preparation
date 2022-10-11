@@ -41,6 +41,16 @@ module.exports = {
         use: "file-loader",
         // tym razem tylko jeden loader
       },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(ttf|otf|woff|woff2)$/,
+        // dodaję rozszerzenia fontów
+        use: "file-loader",
+        // tym razem tylko jeden loader
+      },
     ],
     // obecnie brak dodatkowych ustawień
   },
